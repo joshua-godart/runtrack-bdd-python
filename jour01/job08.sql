@@ -1,0 +1,1 @@
+select id, nom, prenom, age, email from etudiants where age < 18;
