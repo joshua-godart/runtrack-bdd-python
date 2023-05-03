@@ -10,12 +10,12 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 etage = "INSERT INTO etage (nom, numero, superficie) VALUES (%s, %s, %s)"
-val = (input("entrez le nom de l'étage :"), input("entrez le numéro :"), input("entrez la superficie :"))
+#val = (input("entrez le nom de l'étage :"), input("entrez le numéro :"), input("entrez la superficie :"))
 #mycursor.execute("delete from etage where id > 1")
 salle = "INSERT INTO salle (nom, id_etage, capacite) VALUES (%s, %s, %s)"
 #val2 = (input("entrez le nom de la salle :"), input("entrez l'id de l'étage :"), input("entrez la capacité :"))
 
-mycursor.execute(etage, val)
+#mycursor.execute(etage, val)
 #mycursor.execute(salle, val2)
 mydb.commit()
 
